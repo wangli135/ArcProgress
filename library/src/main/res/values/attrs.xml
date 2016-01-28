@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    
+    <declare-styleable name="ArcProgress">
+        <attr name="progress_text_size" format="dimension|reference"></attr>
+        <attr name="progress_text_color" format="color|reference"></attr>
+        <attr name="arc_progress" format="integer|reference"></attr>
+        <attr name="arc_stroke_width" format="dimension|reference"></attr>
+        <attr name="arc_color" format="color|reference"></attr>
+        <attr name="arc_bottom_text" format="string|reference"></attr>
+        <attr name="arc_bottom_text_color" format="color|reference"></attr>
+        <attr name="arc_bottom_text_size" format="dimension|reference"></attr>
+    </declare-styleable>
+</resources>

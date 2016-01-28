@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/toolbar"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="xingfeng.arcprogress.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+   <xingfeng.library.ArcProgress
+       android:id="@+id/arcprogress"
+       app:arc_progress="0"
+       app:arc_bottom_text="Andorid"
+       app:arc_bottom_text_color="#FF00FF"
+       app:arc_stroke_width="3dp"
+       app:arc_bottom_text_size="14sp"
+       app:arc_color="#EEAA00"
+       app:progress_text_size="12sp"
+       app:progress_text_color="#178D56"
+       android:layout_width="200dp"
+       android:layout_height="200dp"></xingfeng.library.ArcProgress>
+
+    <Button
+        android:layout_below="@id/arcprogress"
+        android:onClick="startDownload"
+        android:text="Start Download"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
